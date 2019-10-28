@@ -1,0 +1,198 @@
+ 
+  615  echo "it's hard to do that"
+  616  echo 'it'\''s hard to do that'
+  617  echo '"kawo"'
+  618  echo gogo
+  619  echo go'go
+  620  echo "go'go"
+  621  echo '#ne pusto'
+  622  echo '# pusto'
+  623  echo # pusto
+  624  whoai
+  625  whoaim
+  626  whoami
+  627  echo "Hello world"
+  628  echo Hello world
+  629  date
+  630  cal
+  631  man cal
+  632  help cal
+  633  cal help
+  635  man cal
+  636  cal --help
+  637  cal -h
+  638  cal 1
+  639  cal -3
+  640  cal -h
+  641  cal
+  642  clear
+  643  echo gg
+  644  pwd
+  645  cd /
+  646  cd ..
+  647  pwd
+  648  cd home
+  649  cd ..
+  650  ls
+  651  ls /var
+  652  cd ~
+  653  cd ..
+  654  cd VeHH-GReT-H04
+  655  cd ..
+  656  cd
+  657  ls
+  658  ls -h
+  659  ls --help
+  660  man ls
+  661  mkdir fruits
+  662  cd /
+  663  cd~
+  664  cd ~
+  665  ls
+  666  cd /
+  667  mkdir ~/animals
+  668  cd ~
+  669  ls
+  670  cd /
+  671  man touch
+  672  touch /tmp/temp
+  673  cd ~/fruits
+  674  touch apple.txt
+  675  ls
+  676  touch banana.txt
+  677  touch pineaple.txt
+  678  touch lion.txt
+  679  touch ~/animals/cat.txt
+  680  touch ~/animals/dog.txt
+  681  touch ~/animals/elephant.txt
+  682  ls
+  683  ls ~/animals
+  684  ls -1 apple
+  685  ls -1 ~/fruits/apple
+  686  ls -1 apple.txt
+  687  man stat
+  688  stat %w appla.txt
+  689  ls b*
+  690  ls *b
+  691  ls *a
+  692  ls a*
+  693  ls [bi]
+  694  ls [bi]*
+  695  ls [i]*
+  696  ls
+  697  rm apple
+  698  rm apple.txt
+  699  rm banana.txt
+  700  rm lion.txt
+  701  rm pineaple.txt
+  702  touch apple
+  703  touch banana
+  704  touch pineaple
+  705  ls
+  706  ls a*
+  707  ls *a
+  708  ls b*
+  709  ls *b
+  710  ls [bi]*
+  711  ls i*
+  712  ls *i
+  713  ls p*
+  714  ls b* i*
+  715  cp /etc/passwd ~
+  716  cd..
+  717  cd ..
+  718  ls
+  719  cat /etc/issue
+  720  cp /etc/issue apple
+  721  cd /etc/issue
+  722  cat /fruits/apple
+  723  cat fruits/apple
+  724  ls passwd
+  725  man cat
+  726  cd fruits
+  727  cat /etc/issue
+  728  cp /etc/issue apple
+  729  cat apple
+  730  mv lion ~/animals
+  731  cd ..
+  732  cd animals
+  733  ls
+  734  cd fruits
+  735  cd ..
+  736  cd fruits
+  737  ls
+  738  touch lion
+  739  ls
+  740  man mv
+  741  mv lion ~/animals
+  742  ls
+  743  mv pineaple pineapple
+  744  wc -1 /etc/passwd
+  745  man wc
+  746  wc -l /etc/passwd
+  747  cd ~
+  748  ln -s /etc/passwd passwd_link
+  749  ln .bash_history history hard
+  750  ln .bash_history history_hard
+  751  ls -l .bash_history
+  752  cat bash_history
+  753  cat history_hard
+  754  history
+  755  clear
+  756  rm fruits/apple
+  757  ls fruits
+  758  mkdi rmme
+  759  mkdir rmme
+  760  rmdir rmme
+  761  ls
+  762  rm -fr fruits
+  763  ls
+  764  cp /etc/init.d/ ~
+  765  cp -r /etc/init.d/ ~
+  766  ls
+  767  rm -fr init.d
+  768  history
+  769  clear
+  770  cut -d: -f1/etc/passwd | sort
+  771  man cut
+  772  cut -d: -f1 /etc/passwd | sort
+  773  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  774  cut -d: -f1,3 /etc/passwd | column -ts | less
+  775  cut -d: -f1,3 /etc/passwd | column -ts: | less
+  776  grep :/bin/bash /etc/passwd | wc -l
+  777  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+  778  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 |head -25
+  779  rpm -ql man-db | xargs -l du 2> /dev/null | sort -n
+  780  man top
+  781  man sort
+  782  top -b -n1 | sort -k2,1
+  783  top -b -n1 | tail -n+8 | cut -c7- | tr -s ' ' '\t' | cut -f11,5
+  784  cat /etc/passwd|sort -k2,1|tr ":" " "
+  785  cut -d: -f1,7 /etc/passwd| sort -k2,1
+  786  cd /usr/share/doc/git-*
+  787  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  788  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+  789  tr '[:lower:]' '[:upper:]' < user-manual.txt | tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+  790  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  791  clear
+  792  ping ya.ru
+  793  curl wttr.in
+  794  hostname -I
+  795  man curl
+  796  curl ifconfig.me
+  797  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  798  less README-ru.md
+  799  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+  800  cd ~
+  801  whoami
+  802  id
+  803  whoami
+  804  sudo less /var/log/messages
+  805  less /var/log/messages
+  806  su
+  807  sudo less /var/log/messages
+  808  exit
+  809  history
+  810  id
+  811  whoami
+  812  history > lab1_history.txt
