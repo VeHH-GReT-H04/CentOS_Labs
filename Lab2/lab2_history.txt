@@ -1,0 +1,74 @@
+  880  mkdir test
+  881  ls
+  882  cd test
+  883  touch file
+  884  ls
+  885  chmod man
+  886  man chmod
+  887  chmod ugo-rwx file
+  888  echo "test" > file
+  889  cat file
+  890  ll file
+  891  man ll
+  892  chmod u+w file
+  893  ll file
+  894  echo "test" > file
+  895  cat file
+  896  chmod g+r file
+  897  ll
+  898  cat file
+  899  chmod u+r file
+  900  ll
+  901  ls -l
+  902  man ls
+  903  cat file
+  904  ll
+  905  mkdir dir
+  906  ls
+  907  cd dir
+  908  touch new_file
+  909  ll
+  910  echo "file 2" > new_file
+  911  cat file 2
+  912  cat new_file
+  913  ls
+  914  cd ..
+  915  chmod ugo-x dir
+  916  ll
+  917  cd dir
+  918  cat dir/new_file
+  919  rm dir/new_file
+  920  man chown
+  921  chown root file
+  922  man chown
+  923  chown :root file
+  924  man umask
+  925  umask 0077
+  926  touch file2
+  927  ll
+  928  umask 0000
+  929  rm file2
+  930  touch file2
+  931  ll
+  932  cat file
+  933  ll
+  934  cat file
+  935  ll
+  936  history > lab2_history.txt
+  937  ls -lr
+  938  ll
+  939  ls -lr > lab2_ls
+  940  touch file1
+  941  ll
+  942  rm file1
+  943  umask 0077
+  944  touch file1
+  945  ll
+  946  ls -LR
+  947  ls
+  948  ls -l
+  949  ls -lr
+  950  man ls
+  951  ls -LR
+  952  ls -lR
+  953  history > lab2_history.txt

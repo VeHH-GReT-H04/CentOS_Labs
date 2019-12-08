@@ -1,0 +1,12 @@
+.:
+итого 36
+drw-rw-r--. 2 VeHH-GReT-H04 VeHH-GReT-H04    22 дек  8 11:44 dir
+-rw-r-----. 1 root          VeHH-GReT-H04     5 дек  8 11:42 file
+-rw-------. 1 VeHH-GReT-H04 VeHH-GReT-H04     0 дек  8 12:09 file1
+-rw-rw-rw-. 1 VeHH-GReT-H04 VeHH-GReT-H04     0 дек  8 11:51 file2
+-rw-------. 1 VeHH-GReT-H04 VeHH-GReT-H04 30642 дек  8 12:12 lab2_history.txt
+-rw-------. 1 VeHH-GReT-H04 VeHH-GReT-H04     0 дек  8 12:12 lab2_result
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file
